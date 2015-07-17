@@ -1,55 +1,51 @@
-﻿Build started 7/17/2015 1:10:03 PM.
-     1>Project "C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\devices.vcxproj" on node 2 (build target(s)).
+﻿Build started 7/17/2015 2:02:13 PM.
+     1>Project "C:\GitHub\proprio\cplusplus_codebase\devices.vcxproj" on node 2 (build target(s)).
      1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1422,5): warning : The referenced project '..\..\..\projects\msvc9\chai3d_complete.vcxproj' does not exist.
      1>InitializeBuildStatus:
-         Touching "Debug\Trainer.unsuccessfulbuild".
+         Creating "Debug\Trainer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Python27 /I..\python_codebase\libs /I"..\chai3d-2.0.0/src" /I"..\chai3d-2.0.0/external/OpenGL/msvc" /IC:\Python27\include /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _WIN32 /D _MSVC /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /analyze- /errorReport:prompt src\main.cpp /clr:nostdlib 
-         main.cpp
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Python27 /I..\python_codebase\libs /I"..\chai3d-2.0.0/src" /I"..\chai3d-2.0.0/external/OpenGL/msvc" /IC:\Python27\include /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _WIN32 /D _MSVC /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt "C:\Users\Tom\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
-         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+         All outputs are up-to-date.
+         All outputs are up-to-date.
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin/Trainer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\python_codebase\libs /LIBPATH:"..\chai3d-2.0.0/lib/msvc9" /LIBPATH:"..\chai3d-2.0.0/external/OpenGL/msvc" /LIBPATH:C:\Python27\libs winmm.lib opengl32.lib "chai3d-debug.lib" glu32.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Trainer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"bin\devices.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /FIXED:NO /MACHINE:X86 Debug\experiment.obj
-         Debug\logger.obj
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin/Trainer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\python_codebase\libs /LIBPATH:"..\chai3d-2.0.0/lib/msvc9" /LIBPATH:"..\chai3d-2.0.0/external/OpenGL/msvc" /LIBPATH:C:\Python27\libs winmm.lib opengl32.lib "chai3d-debug.lib" glu32.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Trainer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"bin\devices.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /FIXED:NO /MACHINE:X86 Debug\logger.obj
          Debug\main.obj
          "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
      1>chai3d-debug.lib(CDraw3D.obj) : warning LNK4248: unresolved typeref token (0100001C) for 'GLUquadric'; image may not run
      1>chai3d-debug.lib(CShapeSphere.obj) : warning LNK4248: unresolved typeref token (0100001C) for 'GLUquadric'; image may not run
-     1>chai3d-debug.lib(CDeltaDevices.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CDeltaDevices.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CFalconDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CFalconDevice.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CFreedom6SDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CFreedom6SDevice.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CGenericDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CGenericDevice.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CGenericHapticDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CGenericHapticDevice.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CHapticDeviceHandler.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CHapticDeviceHandler.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CPhantomDevices.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CPhantomDevices.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CVirtualDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CVirtualDevice.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CFileLoaderBMP.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CFileLoaderBMP.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CFileLoaderTGA.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CFileLoaderTGA.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CImageLoader.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CImageLoader.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CDraw3D.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CDraw3D.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CMacrosGL.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CMacrosGL.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CMaterial.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CMaterial.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CTexture2D.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CTexture2D.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CVector3d.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CVector3d.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CCamera.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CCamera.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CGenericObject.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CGenericObject.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CLight.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CLight.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CShapeLine.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CShapeLine.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CShapeSphere.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CShapeSphere.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CWorld.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CWorld.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CPrecisionClock.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CPrecisionClock.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CThread.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CThread.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-     1>chai3d-debug.lib(CExtras.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CExtras.obj)' or at 'C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
-         devices.vcxproj -> C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\bin\Trainer.exe
+     1>chai3d-debug.lib(CDeltaDevices.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CDeltaDevices.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CFalconDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CFalconDevice.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CFreedom6SDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CFreedom6SDevice.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CGenericDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CGenericDevice.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CGenericHapticDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CGenericHapticDevice.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CHapticDeviceHandler.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CHapticDeviceHandler.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CPhantomDevices.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CPhantomDevices.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CVirtualDevice.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CVirtualDevice.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CFileLoaderBMP.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CFileLoaderBMP.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CFileLoaderTGA.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CFileLoaderTGA.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CImageLoader.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CImageLoader.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CDraw3D.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CDraw3D.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CMacrosGL.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CMacrosGL.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CMaterial.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CMaterial.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CTexture2D.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CTexture2D.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CCamera.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CCamera.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CGenericObject.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CGenericObject.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CLight.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CLight.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CShapeLine.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CShapeLine.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CShapeSphere.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CShapeSphere.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CWorld.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CWorld.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CPrecisionClock.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CPrecisionClock.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CThread.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CThread.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+     1>chai3d-debug.lib(CExtras.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'chai3d-debug.lib(CExtras.obj)' or at 'C:\GitHub\proprio\cplusplus_codebase\bin\vc100.pdb'; linking object as if no debug info
+         devices.vcxproj -> C:\GitHub\proprio\cplusplus_codebase\bin\Trainer.exe
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"bin/Trainer.exe;#1" /manifest Debug\Trainer.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Debug\Trainer.unsuccessfulbuild".
          Touching "Debug\Trainer.lastbuildstate".
-     1>Done Building Project "C:\Users\Tom\SSD_Data_Analysis\trainerBot-master3\trainerBot-master\cplusplus_codebase\devices.vcxproj" (build target(s)).
+     1>Done Building Project "C:\GitHub\proprio\cplusplus_codebase\devices.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.63
+Time Elapsed 00:00:00.87

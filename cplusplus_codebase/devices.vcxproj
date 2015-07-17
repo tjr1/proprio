@@ -107,12 +107,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\experiment.cpp" />
     <ClCompile Include="src\logger.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\experiment.h" />
     <ClInclude Include="src\logger.h" />
     <ClInclude Include="src\stdafx.h" />
   </ItemGroup>
