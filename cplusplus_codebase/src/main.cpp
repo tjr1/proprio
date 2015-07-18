@@ -37,12 +37,6 @@
 //---------------------------------------------------------------------------
 #include "chai3d.h"
 #include "logger.h"
-//#include <iostream>
-//#include <Eigen/Dense>
-//using Eigen::MatrixXd;
-
-//#include "experiment.h"
-
 
 //---------------------------------------------------------------------------
 // DECLARED NAMESPACES
@@ -775,6 +769,14 @@ void stateMachineHandler()
 	SYSTEMTIME last_state_t;
 	GetSystemTime(&last_state_t);
 
+	int file_counter = 0;
+
+	int i, j;
+	long double value;
+	long double sum = 0;
+	long double points[100][4][3];
+
+
 	// start the main code loop 
 	while (simulationRunning)
 	{
@@ -790,6 +792,21 @@ void stateMachineHandler()
 		double movementThreshold = 0.010;					// meters
 		double elapsedTime = elapsedTimeSec(last_state_t);	// seconds
 		double maxMovementTime = 30;						// seconds
+
+
+		std::string line;
+		std::string fileName;
+		std::string baseFileName = "test_";
+		std::string fileEnding = ".txt";
+		std::string fileNumber;          // string which will contain the result
+		ostringstream convert;   // stream used for the conversion
+
+		convert << file_counter;      // insert the textual representation of 'Number' in the characters in the stream
+		fileNumber = convert.str(); // set 'Result' to the contents of the stream
+
+		fileName = baseFileName + fileNumber + fileEnding;
+		
+		ifstream myfile (fileName);
 		
 		// reward success
 		bool success = false;
@@ -832,12 +849,48 @@ void stateMachineHandler()
 			case STATE_CALC_TRAJ:
 				useTopStiffSpring	= false;
 				useDamping			= false;
-				GLOBAL_FLAG_LOG_DATA = true;
-				usePoints		    = true;
-				if (elapsedTime > 1) {
-					STATE_MACHINE = STATE_FOLLOW_TRAJ;
+
+				// % read next trajectory file
+				i=0;
+				while (std::getline(myfile, line))
+				{
+					std::istringstream iss(line);
+
+					j=0;
+					while (iss >> value) 
+					{ 
+						points[i][j/3][j%3] =value;
+						std::string message = std::to_string(points[i][j/3][j%3]);
+						std::cout << message;
+						std::cout << " ";
+						j++;
+					}
+
+					std::cout << "\n";
+					i++;
 				}
+
+				//if (myfile.is_open())
+				//{
+				//	cout << fileName << "\n";
+				//	while ( getline (myfile,line) )
+				//	{
+				//		cout << line << '\n';
+				//	}
+				//	myfile.close();
+				//	file_counter++;
+				//}
+				//else 
+				//{
+				//	cout << "Unable to open file"; 
+				//}
+
+				myfile.close();
+				file_counter++;
+
+				STATE_MACHINE = STATE_FOLLOW_TRAJ;
 				break;
+
 			case STATE_FOLLOW_TRAJ:
 
 				if (elapsedTime > 5) {

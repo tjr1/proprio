@@ -1,4 +1,4 @@
-[DeviceManager::DeviceManager():14.02.18.0008] - Constructor
-[ConfigManager::loadIni():14.02.18.0010] - Found hdal.ini at C:\Program Files (x86)\Novint\Falcon\HDAL\config\hdal.ini
-[Module::Module():14.02.18.0013] - Found dhdlcDriver.dll at C:\Program Files (x86)\Novint\Falcon\HDAL\bin\dhdlcDriver.dll
-[ConfigManager::loadIni():14.02.18.0051] - Found hdal.ini at C:\Program Files (x86)\Novint\Falcon\HDAL\config\hdal.ini
+[DeviceManager::DeviceManager():17.36.05.0006] - Constructor
+[ConfigManager::loadIni():17.36.05.0008] - Found hdal.ini at C:\Program Files (x86)\Novint\Falcon\HDAL\config\hdal.ini
+[Module::Module():17.36.05.0011] - Found dhdlcDriver.dll at C:\Program Files (x86)\Novint\Falcon\HDAL\bin\dhdlcDriver.dll
+[ConfigManager::loadIni():17.36.05.0046] - Found hdal.ini at C:\Program Files (x86)\Novint\Falcon\HDAL\config\hdal.ini
