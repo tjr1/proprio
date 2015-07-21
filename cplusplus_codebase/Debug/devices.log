@@ -1,4 +1,4 @@
-﻿Build started 7/17/2015 5:28:34 PM.
+﻿Build started 7/20/2015 6:40:58 PM.
      1>Project "C:\GitHub\proprio\cplusplus_codebase\devices.vcxproj" on node 2 (build target(s)).
      1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1422,5): warning : The referenced project '..\..\..\projects\msvc9\chai3d_complete.vcxproj' does not exist.
      1>InitializeBuildStatus:
@@ -49,4 +49,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.37
+Time Elapsed 00:00:04.22
