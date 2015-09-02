@@ -1,14 +1,21 @@
-﻿Build started 7/20/2015 6:40:58 PM.
-     1>Project "C:\GitHub\proprio\cplusplus_codebase\devices.vcxproj" on node 2 (build target(s)).
+﻿Build started 9/2/2015 3:09:26 PM.
+     1>Project "C:\GitHub\proprio\cplusplus_codebase\devices.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Trainer.lastbuildstate".
      1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1422,5): warning : The referenced project '..\..\..\projects\msvc9\chai3d_complete.vcxproj' does not exist.
-     1>InitializeBuildStatus:
+       InitializeBuildStatus:
          Creating "Debug\Trainer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Python27 /I..\python_codebase\libs /I"..\chai3d-2.0.0/src" /I"..\chai3d-2.0.0/external/OpenGL/msvc" /IC:\Python27\include /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _WIN32 /D _MSVC /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /analyze- /errorReport:prompt src\main.cpp /clr:nostdlib 
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Python27 /I..\python_codebase\libs /I"..\chai3d-2.0.0/src" /I"..\chai3d-2.0.0/external/OpenGL/msvc" /IC:\Python27\include /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _WIN32 /D _MSVC /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /analyze- /errorReport:prompt src\logger.cpp src\main.cpp /clr:nostdlib 
+         logger.cpp
+     1>src\logger.cpp(161): warning C4805: '==' : unsafe mix of type 'bool' and type 'int' in operation
+     1>src\logger.cpp(246): warning C4018: '<' : signed/unsigned mismatch
          main.cpp
-         All outputs are up-to-date.
+         Generating Code...
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Python27 /I..\python_codebase\libs /I"..\chai3d-2.0.0/src" /I"..\chai3d-2.0.0/external/OpenGL/msvc" /IC:\Python27\include /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _WIN32 /D _MSVC /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt "C:\Users\Tom\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin/Trainer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\python_codebase\libs /LIBPATH:"..\chai3d-2.0.0/lib/msvc9" /LIBPATH:"..\chai3d-2.0.0/external/OpenGL/msvc" /LIBPATH:C:\Python27\libs winmm.lib opengl32.lib "chai3d-debug.lib" glu32.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Trainer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"bin\devices.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /FIXED:NO /MACHINE:X86 Debug\logger.obj
          Debug\main.obj
@@ -45,8 +52,8 @@
        FinalizeBuildStatus:
          Deleting file "Debug\Trainer.unsuccessfulbuild".
          Touching "Debug\Trainer.lastbuildstate".
-     1>Done Building Project "C:\GitHub\proprio\cplusplus_codebase\devices.vcxproj" (build target(s)).
+     1>Done Building Project "C:\GitHub\proprio\cplusplus_codebase\devices.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.22
+Time Elapsed 00:00:09.81
